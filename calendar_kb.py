@@ -13,6 +13,7 @@ def create_calendar_kb(Day: None | int in range(1, 32), Month: int
                        in range(1, 13), Year: int,
                        List_Date: list | None) -> InlineKeyboardMarkup:
 	#global list_dates
+
 	print('Записей в календаре:', len(List_Date))
 	kb_builder: InlineKeyboardBuilder = InlineKeyboardBuilder()
 	list_button: list[list[InlineKeyboardButton]] = []
