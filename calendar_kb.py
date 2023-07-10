@@ -53,7 +53,7 @@ def create_calendar_kb(Day: None | int in range(1, 32), Month: int
 
 	kb_builder.row(InlineKeyboardButton(text=text, callback_data=callback_text))
 	kb_builder.row(*[
-	 InlineKeyboardButton(text=c, callback_data='no_day')
+		InlineKeyboardButton(text=c, callback_data='no_day')
 	 for c in ('Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс')
 	])
 	kb_builder.row(*list_button, width=7)
